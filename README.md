@@ -51,8 +51,8 @@ app.listen(3000, () => {
 
 ```
 
-app.post('/user', (req, res) => {
-  res.status(201).json({ message: 'User created' });
+app.post('/user',async (req, res) => {
+ await res.status(201).json({ message: 'User created' });
 });
 ```
 
