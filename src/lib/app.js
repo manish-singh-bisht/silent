@@ -144,7 +144,7 @@ class Silent {
 
   #addStaticFiles(urlPath, filePath) {
     if (this.#staticFiles[urlPath]) {
-      throw new Error("A file already exists for this route.");
+      throw new Error("A static file already exists for this route.");
     }
 
     this.#staticFiles[urlPath] = filePath;
