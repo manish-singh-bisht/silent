@@ -7,8 +7,8 @@ const app = new Silent();
 app.staticFile("/hello.html", path.join(__dirname, "hello.html"));
 
 // Define a route
-app.get("/", (req, res) => {
-  res.send("Hello World!");
+app.get("/", async (req, res) => {
+  await res.json({ message: "Hello World!" });
 });
 
 // Start the server
